@@ -21,7 +21,7 @@ export default function Banner() {
               </span>
             </button>
           </h2>
-          <p className="max-w-2xl mx-auto">We build websites, mobiles apps (android & ios), desktop apps, web apps , ecommerce solution , ERP system and custom softwares, providing comprehensive software solutions for seamless digital experiences and business success. Lets build your start-up ideas to a Product</p>
+          <p className="max-w-2xl mx-auto text-justify md:text-center">We build websites, mobiles apps (android & ios), desktop apps, web apps , ecommerce solution , ERP system and custom softwares, providing comprehensive software solutions for seamless digital experiences and business success. Lets build your start-up ideas to a Product</p>
           <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0 text-sm">
             <Link
               href="tel:9864755749"

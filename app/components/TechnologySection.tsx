@@ -34,7 +34,7 @@ export default function TechnologySection() {
       <div className="max-w-xl space-y-3">
         <h3 className="text-green-600 font-semibold">Technology & Tools</h3>
         <p className="text-zinc-700 text-3xl font-semibold sm:text-4xl">Technology and Tools that we use to make robust software.</p>
-        <p>We use various tools and technologyes to make the software , some technology thate we use daily are here.</p>
+        <p className=" text-justify">We use various tools and technologyes to make the software , some technology thate we use daily are here.</p>
       </div>
 
       <div className=" grid grid-cols-4 gap-5 mt-4">

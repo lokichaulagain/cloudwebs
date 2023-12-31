@@ -11,7 +11,7 @@ export default function ContactSection() {
         <div className="max-w-xl space-y-3">
           <h3 className="text-green-600 font-semibold">Contact</h3>
           <p className="text-zinc-700 text-3xl font-semibold sm:text-4xl">Let us know how we can help</p>
-          <p>We’re here to help and answer any question you might have, We look forward to hearing from you .</p>
+          <p className=" text-justify">We’re here to help and answer any question you might have, We look forward to hearing from you .</p>
         </div>
 
         <div>

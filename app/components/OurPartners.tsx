@@ -27,7 +27,7 @@ export default function OurPartners() {
       <div className="max-w-xl space-y-3">
         <h3 className="text-green-600 font-semibold">Honoralble Partners</h3>
         <p className="text-zinc-700 text-3xl font-semibold sm:text-4xl">Our Trusted Partner</p>
-        <p>Explore our valued partnerships through our client section. Witness the brands we’ve proudly collaborated with, each image representing a story of successful projects and satisfied clients. Join us on this journey, and let’s create success together.</p>
+        <p className="text-justify">Explore our valued partnerships through our client section. Witness the brands we’ve proudly collaborated with, each image representing a story of successful projects and satisfied clients. Join us on this journey, and let’s create success together.</p>
       </div>
 
       <div className="mt-12 flex justify-center image-container ">
