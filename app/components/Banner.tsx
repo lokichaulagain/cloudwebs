@@ -24,7 +24,7 @@ export default function Banner() {
           <p className="max-w-2xl mx-auto text-justify md:text-center">We build websites, mobiles apps (android & ios), desktop apps, web apps , ecommerce solution , ERP system and custom softwares, providing comprehensive software solutions for seamless digital experiences and business success. Lets build your start-up ideas to a Product</p>
           <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0 text-sm">
             <Link
-              href="tel:9864755749"
+              href="tel:9766896866"
               className="block py-2 px-4 text-white font-medium bg-green-800 duration-150 hover:bg-green-700 active:bg-green-800 rounded-lg shadow-lg hover:shadow-none">
               Phone Call
             </Link>
