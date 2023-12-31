@@ -1,7 +1,10 @@
 "use client";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import logo from "../../public/logo.png";
 
 export default function Header() {
   const [state, setState] = useState(false);
@@ -29,8 +32,8 @@ export default function Header() {
       ref={navRef}
       className="bg-indigo-600 w-full top-0 z-20 text-zinc-50">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:px-8 lg:flex">
-        <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
-          <p>Logo</p>
+        <div className="flex items-center justify-between py-3 lg:py-3 lg:block">
+          <p className=" text-lg font-medium tracking-wide">Cloudsweb Nepal</p>
           <div className="lg:hidden">
             <button
               className=" outline-none p-2 rounded-md"
@@ -48,19 +51,20 @@ export default function Header() {
                 <div className="svg-wrapper">
                   <IconBxMailSend />
                 </div>
-                <span className=" text-sm"> Get intouch</span>
+                <span className=" text-sm"> Get in touch</span>
               </Link>
             </ul>
           </div>
           <div className="flex-1">
             <ul className="justify-center items-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
-              {navigations.map((item, idx) => {
+              {navigations.map((item: any, idx) => {
                 return (
-                  <li
+                  <AnchorLink
+                    href={`#${item.path}`}
                     key={idx}
                     className="font-medium">
-                    <Link href={item.path}>{item.title}</Link>
-                  </li>
+                    {item.title}
+                  </AnchorLink>
                 );
               })}
             </ul>
@@ -72,10 +76,9 @@ export default function Header() {
 }
 
 const navigations = [
-  { title: "Home", path: "/" },
-  { title: "About", path: "/" },
-  { title: "Services", path: "/" },
-  { title: "Technology", path: "/" },
+  { title: "Home", path: "home" },
+  { title: "Services", path: "services" },
+  { title: "Contact", path: "contact" },
 ];
 
 function IconBxMailSend() {

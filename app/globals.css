@@ -430,3 +430,14 @@
 
 /* ============================= */
 
+.image-container {
+  display: flex;
+}
+
+.image-item {
+  transition: transform 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.image-item:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}

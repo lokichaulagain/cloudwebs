@@ -15,7 +15,7 @@ export default function TestimonialSection() {
 
   return (
     <section className=" technology_container">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8">
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-indigo-600 font-semibold pb-6">What our client are saying about ?</h3>
           <ul>
@@ -24,14 +24,14 @@ export default function TestimonialSection() {
                 <li key={idx}>
                   <figure>
                     <blockquote>
-                      <p className="text-gray-800 text-xl font-semibold sm:text-2xl text-justify md:text-center">“{item.quote}“</p>
+                      <p className="text-zinc-800 text-xl font-semibold sm:text-2xl text-justify md:text-center">“{item.quote}“</p>
                     </blockquote>
                     <div className="mt-6">
                       <div className=" flex items-center justify-center">
                         <p className=" h-10 w-10 bg-gray-300 rounded-full flex items-center justify-center font-medium">{item.name.split("")[0]}</p>
                       </div>
                       <div className="mt-3">
-                        <span className="block text-gray-800 font-semibold">{item.name}</span>
+                        <span className="block text-zinc-800 font-semibold">{item.name}</span>
                         <span className="block text-gray-600 text-sm mt-0.5">
                           {item.title} ({item.company})
                         </span>

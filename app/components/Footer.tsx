@@ -15,7 +15,7 @@ export default function Footer() {
             width={100}
           />
         </div>
-        <p className="leading-relaxed text-sm mt-2 text-justify">Cloud Nepal and it’s team regarding different other institutions have grown 10x in these two years. It’s not about desire, not about profit, not about building but we are here for the development and the change in nation. Since we lack in each and every point. We got to look for the nation as soon as possible cause we lack employment, we lack quality education system, we lack technology, we even lack youth in our nation.</p>
+        <p className="leading-relaxed text-sm mt-2 text-justify">Cloud Nepal and it’s team regarding different other institutions have grown 10x in these two years. It’s not about desire, not about profit, not about building but we are here for the development and the change in nation. Lets build something crazy .</p>
       </div>
 
       <div className="mt-8 items-center justify-between sm:flex">

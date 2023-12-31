@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ContactSection() {
   return (
-    <section className="">
+    <section id="contact" className="">
       <div className=" text-zinc-600 ">
         <div className="max-w-xl space-y-3">
           <h3 className="text-indigo-600 font-semibold">Contact</h3>
@@ -70,7 +70,7 @@ const contactMethods = [
         />
       </svg>
     ),
-    contact: "Mountain View, California, United State.",
+    contact: "Putalisadak, Kathmandu, Nepal",
     title: "Location",
   },
   {

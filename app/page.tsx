@@ -9,14 +9,14 @@ import TestimonialSection from "./components/TestimonialSection";
 
 export default function Home() {
   return (
-    <main className=" flex flex-col gap-20">
+    <main className=" flex flex-col gap-12 md:gap-20">
       <Banner />
-      <TechnologySection />
       <ServiceSection />
       <OurPartners />
-      <ContactSection />
+      <TechnologySection />
       <TestimonialSection />
       <StatsSection />
+      <ContactSection />
     </main>
   );
 }

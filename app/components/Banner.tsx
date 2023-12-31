@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <section>
+    <section id="home">
       <div className=" banner_container py-4 pt-12">
         <div className="space-y-5 max-w-4xl mx-auto text-center">
           <h1 className="text-sm text-indigo-600 font-medium">Empowering your Businesses with Software Solutions.</h1>
@@ -20,7 +20,7 @@ export default function Banner() {
               </span>
             </button>
           </h2>
-          <p className="max-w-2xl mx-auto">We build websites, apps, and custom systems, providing comprehensive software solutions for seamless digital experiences and business success.</p>
+          <p className="max-w-2xl mx-auto">We build websites, mobiles apps (android & ios), desktop apps, web apps , ecommerce solution , ERP system and custom softwares, providing comprehensive software solutions for seamless digital experiences and business success. Lets build your start-up ideas to a Product</p>
           <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0 text-sm">
             <Link
               href="tel:9864755749"
