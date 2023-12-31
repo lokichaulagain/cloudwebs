@@ -16,7 +16,7 @@ export default function TestimonialSection() {
 
   return (
     <section className=" technology_container">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8">
+      <div className=" py-8">
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-green-600 font-semibold pb-6 ">What our client are saying about us ?</h3>
           <ul>
