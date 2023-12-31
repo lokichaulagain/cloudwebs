@@ -11,7 +11,7 @@ export default function ServiceSection() {
         <p className=" text-2xl md:text-4xl font-semibold w-full text-zinc-700">
           Following are the services <br /> that we offers
         </p>
-        <p className=" w-full text-justify">We build secure . efficient and visually stunning mobiles apps (android & ios), desktop apps, web apps , ecommerce solution , ERP system and custom softwares to meet your business goals.</p>
+        <p className=" w-full text-justify">We build secure,efficient and visually stunning mobiles apps (android & ios), desktop apps, web apps , ecommerce solution , ERP system and custom softwares to meet your business goals.</p>
       </div>
 
       <div className=" flex flex-col  gap-8 mt-12">

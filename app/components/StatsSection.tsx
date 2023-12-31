@@ -33,12 +33,12 @@ export default function StatsSection() {
                 <li
                   key={idx}
                   className="text-center w-full px-4 py-6 sm:w-auto lg:py-4">
-                  <CountUp
+                  {/* <CountUp
                     duration={6}
                     className="text-4xl text-green-800 font-semibold"
                     end={visible ? item.data : 0}
-                  />{" "}
-                  <span className="text-4xl text-green-800 font-semibold">+</span>
+                  />{" "} */}
+                  <span className="text-4xl text-green-800 font-semibold">{item.data}+</span>
                   <p className="mt-3 font-medium">{item.title}</p>
                 </li>
               ))}

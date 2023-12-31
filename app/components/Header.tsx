@@ -31,7 +31,7 @@ export default function Header() {
   return (
     <nav
       ref={navRef}
-      className="bg-green-800 w-full top-0 z-20 text-zinc-50">
+      className="bg-green-900 w-full top-0 z-20 text-zinc-50">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:px-8 lg:flex">
         <div className="flex items-center justify-between py-3 lg:py-3 lg:block">
           <p className=" text-lg font-medium tracking-wide uppercase">cloudsnepalweb</p>
