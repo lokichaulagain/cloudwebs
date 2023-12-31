@@ -1,31 +1,43 @@
 "use client";
+import Head from "next/head";
 import Link from "next/link";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="">
-      <div className=" text-zinc-600 ">
-        <div className="max-w-xl space-y-3">
-          <h3 className="text-indigo-600 font-semibold">Contact</h3>
-          <p className="text-zinc-700 text-3xl font-semibold sm:text-4xl">Let us know how we can help</p>
-          <p>We’re here to help and answer any question you might have, We look forward to hearing from you .</p>
+    <>
+      <Head>
+        <title>cloudsnepalweb | Contact Details</title>
+        <meta
+          name="description"
+          content="If you want to make website , mobile apps and webapps please contact at (+977) 9766896866 or you can visit location at Putalisadak, Kathmandu, Nepal or even you can mail at webcloudsnepal@gmail.com."
+        />
+      </Head>
+      <section
+        id="contact"
+        className="">
+        <div className=" text-zinc-600 ">
+          <div className="max-w-xl space-y-3">
+            <h3 className="text-green-600 font-semibold">Contact</h3>
+            <p className="text-zinc-700 text-3xl font-semibold sm:text-4xl">Let us know how we can help</p>
+            <p>We’re here to help and answer any question you might have, We look forward to hearing from you .</p>
+          </div>
+
+          <div>
+            <ul className="mt-12 flex flex-wrap gap-x-12 gap-y-6 items-center lg:gap-x-24">
+              {contactMethods.map((item, idx) => (
+                <li key={idx}>
+                  <h4 className="text-zinc-700 text-lg font-medium">{item.title}</h4>
+                  <div className="mt-3 flex items-center gap-x-3">
+                    <div className="flex-none text-green-800 animate-bounce">{item.icon}</div>
+                    {renderContactInfo(item)}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        
-        <div>
-          <ul className="mt-12 flex flex-wrap gap-x-12 gap-y-6 items-center lg:gap-x-24">
-            {contactMethods.map((item, idx) => (
-              <li key={idx}>
-                <h4 className="text-zinc-700 text-lg font-medium">{item.title}</h4>
-                <div className="mt-3 flex items-center gap-x-3">
-                  <div className="flex-none text-zinc-400">{item.icon}</div>
-                  {renderContactInfo(item)}
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
@@ -89,7 +101,7 @@ const contactMethods = [
         />
       </svg>
     ),
-    contact: "+1 (555) 000-000",
+    contact: "9766896866",
     title: "Phone",
   },
   {
@@ -108,7 +120,7 @@ const contactMethods = [
         />
       </svg>
     ),
-    contact: "Support@example.com",
+    contact: "webcloudsnepal@gmail.com",
     title: "Email",
   },
 ];

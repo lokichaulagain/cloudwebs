@@ -2,24 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Navbar */
+/* Navbar sticky effect */
 .sticky-nav {
   animation: sticky-nav 300ms;
 }
-
 @keyframes sticky-nav {
   0% {
     transform: translateY(-6em);
   }
-
   100% {
     transform: translateY(0);
   }
 }
 
-/*  */
-
-.banner_container {
+/* graph_bg_effect  */
+.graph_bg_effect {
   width: 100%;
   height: 100%;
   --color: #e1e1e137;
@@ -31,12 +28,9 @@
 .technology_container {
   width: 100%;
   height: 100%;
-  /* Add your background pattern here */
   background: rgba(29, 31, 32, 0) radial-gradient(rgba(102, 102, 102, 0.307) 10%, transparent 1%);
-
   background-size: 11px 11px;
 }
-
 @keyframes square-animation {
   0% {
     left: 0;
@@ -124,62 +118,7 @@
   }
 }
 
-.loader {
-  position: relative;
-  width: 96px;
-  height: 96px;
-  transform: rotate(45deg);
-}
-
-.loader-square {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 28px;
-  height: 28px;
-  margin: 2px;
-  border-radius: 0px;
-  background: rgb(32, 31, 31);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  animation: square-animation 10s ease-in-out infinite both;
-}
-
-.loader-square:nth-of-type(0) {
-  animation-delay: 0s;
-}
-
-.loader-square:nth-of-type(1) {
-  animation-delay: -1.4285714286s;
-}
-
-.loader-square:nth-of-type(2) {
-  animation-delay: -2.8571428571s;
-}
-
-.loader-square:nth-of-type(3) {
-  animation-delay: -4.2857142857s;
-}
-
-.loader-square:nth-of-type(4) {
-  animation-delay: -5.7142857143s;
-}
-
-.loader-square:nth-of-type(5) {
-  animation-delay: -7.1428571429s;
-}
-
-.loader-square:nth-of-type(6) {
-  animation-delay: -8.5714285714s;
-}
-
-.loader-square:nth-of-type(7) {
-  animation-delay: -10s;
-}
-
 /* header button */
-
 .mail_button span {
   display: block;
   margin-left: 0.3em;
@@ -217,12 +156,9 @@
 
 /* ===================================== */
 .expand_container {
-  /* transform: rotate(-25deg) skew(25deg); */
-  /* transform: rotate(deg) skew(1deg); */
   transform-style: preserve-3d;
   position: relative;
   list-style: none;
-  /* width: 100px; */
   height: 32px;
   border: none;
   background: transparent;
@@ -237,7 +173,7 @@
   left: -5px;
   width: 100%;
   height: 10px;
-  background: #4f46e5;
+  background: #166534;
   transform: skewX(-41deg);
 }
 
@@ -248,7 +184,7 @@
   left: -9px;
   width: 9px;
   height: 100%;
-  background:  #4f46e5;
+  background: #166534;
   transform: skewY(-49deg);
 }
 
@@ -258,9 +194,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background:  #4f46e5;
+  background: #166534;
   color: #fff;
-  /* font-size: 25px; */
   transition: 1.1s ease-out;
 }
 
@@ -317,13 +252,10 @@
 }
 
 .expand_container:nth-child(1):hover span {
-  background:  #f00c9c;;
+  background: #ffb534;
 }
 
-/* ================================ */
-
-/* === removing default button style ===*/
-.button1 {
+.hero_section_transition {
   margin: 0;
   height: auto;
   background: transparent;
@@ -332,22 +264,18 @@
   cursor: pointer;
 }
 
-/* button1 styling */
-.button1 {
+.hero_section_transition {
   --border-right: 6px;
   --text-stroke-color: rgba(151, 148, 148, 0.6);
-  --animation-color: #4f46e5;
-  /* --fs-size: 0.5em; */
-  /* letter-spacing: 3px; */
+  --animation-color: #166534;
   text-decoration: none;
   font-size: var(--fs-size);
   font-family: "Arial";
   position: relative;
-  /* text-transform: uppercase; */
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
-/* this is the text, when you hover on button1 */
+
 .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -360,21 +288,11 @@
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
 }
-/* hover */
-.button1:hover .hover-text {
+.hero_section_transition:hover .hover-text {
   width: 100%;
-  /* filter: drop-shadow(0 0 23px var(--animation-color)) */
 }
 
-/* .image {
-  transition: transform 0.3s ease-in-out;
-}
-
-.image:hover {
-  transform: scale(1.4); 
-} */
-
-/* ======================== */
+/* Technology tooltip animation */
 .tooltip-container {
   display: flex;
   align-items: center;
@@ -405,7 +323,7 @@
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
-  background-color: #4e46e5eb;
+  background-color: #166534;
   border-radius: 12px;
   color: white;
 }
@@ -418,7 +336,7 @@
   bottom: -0.2em;
   left: 50%;
   transform: translate(-50%) rotate(45deg);
-  background-color: #4f46e5;
+  background-color: #166534;
 }
 
 .tooltip-container:hover .tooltip {
@@ -427,17 +345,84 @@
   visibility: visible;
   pointer-events: auto;
 }
-
-/* ============================= */
-
+/* client image hover effect */
 .image-container {
   display: flex;
 }
-
 .image-item {
-  transition: transform 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+  transition: transform 0.3s ease-in-out;
+}
+.image-item:hover {
+  transform: scale(1.1);
 }
 
-.image-item:hover {
-  transform: scale(1.1); /* Adjust the scale factor as needed */
+.black-and-white {
+  filter: grayscale(100%);
+}
+
+/* Navbar loading animation */
+.loader {
+  background: linear-gradient(#0000 calc(1 * 100% / 6), #fff 0 calc(3 * 100% / 6), #0000 0), linear-gradient(#0000 calc(2 * 100% / 6), #fff 0 calc(4 * 100% / 6), #0000 0), linear-gradient(#0000 calc(3 * 100% / 6), #fff 0 calc(5 * 100% / 6), #0000 0);
+  background-size: 10px 400%;
+  background-repeat: no-repeat;
+  animation: matrix 1s infinite linear;
+}
+@keyframes matrix {
+  0% {
+    background-position: 0% 100%, 50% 100%, 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%, 50% 0%, 100% 0%;
+  }
+}
+
+/* underline hover effect */
+.underline_hover_effect {
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+}
+
+.underline_hover_effect:focus:after,
+.underline_hover_effect:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.underline_hover_effect:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+/* scrollbar------------------ */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 128, 0, 0.874);
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #166534;
 }

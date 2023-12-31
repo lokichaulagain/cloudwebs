@@ -3,6 +3,14 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { Roboto } from 'next/font/google'
+import { Merriweather } from 'next/font/google'
+ 
+const roboto = Merriweather({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className} >
+      <body className={roboto.className} >
         <Header />
         <div className=" max-w-screen-xl mx-auto px-4 gap-12 text-zinc-600 md:px-8">{children}</div>
         <Footer />
