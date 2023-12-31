@@ -8,7 +8,7 @@ export default function TestimonialSection() {
       name: "Dipak Chandra Baral",
       title: "Managing Director",
       company: "Everest Hospital",
-      quote: "Absolutely delighted with the web app by [Your Company]. It's a game-changer for Everest Hospital. Incgreenible service, seamless process, and total dedication. Highly recommend their expertise and commitment!",
+      quote: "Absolutely delighted with the web app by clousnepalweb. It's a game-changer for Everest Hospital. Incgreenible service, seamless process, and total dedication. Highly recommend their expertise and commitment!",
     },
   ];
 
@@ -25,7 +25,7 @@ export default function TestimonialSection() {
                 <li key={idx}>
                   <figure>
                     <blockquote>
-                      <p className="text-zinc-800 text-xl font-semibold sm:text-2xl  md:text-center">“{item.quote}“</p>
+                      <p className="text-zinc-700 leading-relaxed tracking-wide ">“{item.quote}“</p>
                     </blockquote>
                     <div className="mt-6">
                       <div className=" flex items-center justify-center">
