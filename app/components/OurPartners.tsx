@@ -11,7 +11,7 @@ import diwasi from "../images/clients/diwasi.png";
 import urban from "../images/clients/urban.png";
 import Image from "next/image";
 import { useState } from "react";
-import Head from "next/head";
+
 
 export default function OurPartners() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -23,39 +23,30 @@ export default function OurPartners() {
   };
 
   return (
-    <>
-      <Head>
-        <title>cloudsnepalweb | Partner Section</title>
-        <meta
-          name="description"
-          content="Cloudnepalweb is the software provider company in Nepal, It has been providing services like website , mobile apps , web apps development services. If you want to make website , mobile apps and webapps please contact at (+977) 9766896866 or you can visit location at Putalisadak, Kathmandu, Nepal or even you can mail at webcloudsnepal@gmail.com."
-        />
-      </Head>
-      <section className="">
-        <div className="max-w-xl space-y-3">
-          <h3 className="text-green-600 font-semibold">Honoralble Partners</h3>
-          <p className="text-zinc-700 text-3xl font-semibold sm:text-4xl">Our Trusted Partner</p>
-          <p>Explore our valued partnerships through our client section. Witness the brands we’ve proudly collaborated with, each image representing a story of successful projects and satisfied clients. Join us on this journey, and let’s create success together.</p>
-        </div>
+    <section className="">
+      <div className="max-w-xl space-y-3">
+        <h3 className="text-green-600 font-semibold">Honoralble Partners</h3>
+        <p className="text-zinc-700 text-3xl font-semibold sm:text-4xl">Our Trusted Partner</p>
+        <p>Explore our valued partnerships through our client section. Witness the brands we’ve proudly collaborated with, each image representing a story of successful projects and satisfied clients. Join us on this journey, and let’s create success together.</p>
+      </div>
 
-        <div className="mt-12 flex justify-center image-container ">
-          <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-16 md:grid-cols-3 lg:grid-cols-4">
-            {[everrst, wisecube, manas, lumbini, , scpcc, tsubaki, quiz, dhulikhel, urban, diwasi].map((item, index) => (
-              <div
-                key={index}
-                className={`image-item ${hoveredIndex !== null && hoveredIndex !== index ? "black-and-white" : ""}`}
-                onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={handleMouseLeave}>
-                <Image
-                  src={item}
-                  alt="client-image"
-                  className=" h-20 w-30 object-contain cursor-pointer"
-                />
-              </div>
-            ))}
-          </ul>
-        </div>
-      </section>
-    </>
+      <div className="mt-12 flex justify-center image-container ">
+        <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-16 md:grid-cols-3 lg:grid-cols-4">
+          {[everrst, wisecube, manas, lumbini, , scpcc, tsubaki, quiz, dhulikhel, urban, diwasi].map((item, index) => (
+            <div
+              key={index}
+              className={`image-item ${hoveredIndex !== null && hoveredIndex !== index ? "black-and-white" : ""}`}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}>
+              <Image
+                src={item}
+                alt="client-image"
+                className=" h-20 w-30 object-contain cursor-pointer"
+              />
+            </div>
+          ))}
+        </ul>
+      </div>
+    </section>
   );
 }

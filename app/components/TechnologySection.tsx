@@ -26,41 +26,32 @@ import ios from "../images/technology/ios-logo.png";
 import postman from "../images/technology/postman.jpg";
 import vApache from "../images/technology/vApache-1.png";
 import selenium from "../images/technology/selenium.png";
-import Head from "next/head";
+
 
 export default function TechnologySection() {
   return (
-    <>
-      <Head>
-        <title>cloudsnepalweb | Technology Section</title>
-        <meta
-          name="description"
-          content="Cloudnepalweb is the software provider company in Nepal, It has been providing services like website , mobile apps , web apps development services. cloudswebnepal uses various technology line reactjs,nextjs,nodejs,expressjs,fastify,python,docker,kubernetes,hyml,css,jsvascript,trypescript."
-        />
-      </Head>
-      <section className="graph_bg_effect py-8 md:px-4">
-        <div className="max-w-xl space-y-3">
-          <h3 className="text-green-600 font-semibold">Technology & Tools</h3>
-          <p className="text-zinc-700 text-3xl font-semibold sm:text-4xl">Technology and Tools that we use to make robust software.</p>
-          <p>We use various tools and technologyes to make the software , some technology thate we use daily are here.</p>
-        </div>
+    <section className="graph_bg_effect py-8 md:px-4">
+      <div className="max-w-xl space-y-3">
+        <h3 className="text-green-600 font-semibold">Technology & Tools</h3>
+        <p className="text-zinc-700 text-3xl font-semibold sm:text-4xl">Technology and Tools that we use to make robust software.</p>
+        <p>We use various tools and technologyes to make the software , some technology thate we use daily are here.</p>
+      </div>
 
-        <div className=" grid grid-cols-4 gap-5 mt-4">
-          {technologies.map((item: any, index: number) => (
-            <div
-              key={index}
-              className="tooltip-container">
-              <span className="tooltip">{item.tooltip}</span>
-              <Image
-                src={item.image}
-                alt="img"
-                className="image text cursor-pointer h-8 w-8"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
-    </>
+      <div className=" grid grid-cols-4 gap-5 mt-4">
+        {technologies.map((item: any, index: number) => (
+          <div
+            key={index}
+            className="tooltip-container">
+            <span className="tooltip">{item.tooltip}</span>
+            <Image
+              src={item.image}
+              alt="img"
+              className="image text cursor-pointer h-8 w-8"
+            />
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
 

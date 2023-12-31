@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import logo from "../../public/logo.png";
-import Head from "next/head";
+
 
 export default function Header() {
   const [state, setState] = useState(false);
@@ -29,60 +29,51 @@ export default function Header() {
   }, [state]);
 
   return (
-    <>
-      <Head>
-        <title>cloudsnepalweb | Header Section</title>
-        <meta
-          name="description"
-          content="Cloudnepalweb is the software provider company in Nepal, It has been providing services like website , mobile apps , web apps development services. If you want to make website , mobile apps and webapps please contact at (+977) 9766896866 or you can visit location at Putalisadak, Kathmandu, Nepal or even you can mail at webcloudsnepal@gmail.com."
-        />
-      </Head>
-      <nav
-        ref={navRef}
-        className="bg-green-800 w-full top-0 z-20 text-zinc-50">
-        <div className="items-center px-4 max-w-screen-xl mx-auto md:px-8 lg:flex">
-          <div className="flex items-center justify-between py-3 lg:py-3 lg:block">
-            <p className=" text-lg font-medium tracking-wide uppercase">cloudsnepalweb</p>
-            <div className="hidden">
-              <button
-                className=" outline-none p-2 rounded-md"
-                onClick={() => setState(!state)}>
-                {state ? <X /> : <Menu />}
-              </button>
-            </div>
-            <div className="loader h-8 w-8 lg:hidden "></div>
+    <nav
+      ref={navRef}
+      className="bg-green-800 w-full top-0 z-20 text-zinc-50">
+      <div className="items-center px-4 max-w-screen-xl mx-auto md:px-8 lg:flex">
+        <div className="flex items-center justify-between py-3 lg:py-3 lg:block">
+          <p className=" text-lg font-medium tracking-wide uppercase">cloudsnepalweb</p>
+          <div className="hidden">
+            <button
+              className=" outline-none p-2 rounded-md"
+              onClick={() => setState(!state)}>
+              {state ? <X /> : <Menu />}
+            </button>
           </div>
-          <div className={`flex-1 items-center justify-between flex-row-reverse lg:overflow-visible lg:flex lg:pb-0 lg:pr-0 lg:h-auto ${state ? "h-screen pb-20 overflow-auto pr-4" : "hidden"}`}>
-            <div>
-              <ul className="flex flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row">
-                <Link
-                  href="mailto:webcloudsnepal@gmail.com"
-                  className="mail_button flex items-center py-2 px-4 text-center text-green-800 hover:text-green-800 bg-white  hover:bg-green-800  rounded-md shadow transition-all ease-in-out  ">
-                  <div className="svg-wrapper">
-                    <IconBxMailSend />
-                  </div>
-                  <span className=" text-sm"> Get in touch</span>
-                </Link>
-              </ul>
-            </div>
-            <div className="flex-1">
-              <ul className="justify-center items-center  lg:flex lg:space-x-6 ">
-                {navigations.map((item: any, idx) => {
-                  return (
-                    <AnchorLink
-                      href={`#${item.path}`}
-                      key={idx}
-                      className="font-medium underline_hover_effect">
-                      {item.title}
-                    </AnchorLink>
-                  );
-                })}
-              </ul>
-            </div>
+          <div className="loader h-8 w-8 lg:hidden "></div>
+        </div>
+        <div className={`flex-1 items-center justify-between flex-row-reverse lg:overflow-visible lg:flex lg:pb-0 lg:pr-0 lg:h-auto ${state ? "h-screen pb-20 overflow-auto pr-4" : "hidden"}`}>
+          <div>
+            <ul className="flex flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row">
+              <Link
+                href="mailto:webcloudsnepal@gmail.com"
+                className="mail_button flex items-center py-2 px-4 text-center text-green-800 hover:text-green-800 bg-white  hover:bg-green-800  rounded-md shadow transition-all ease-in-out  ">
+                <div className="svg-wrapper">
+                  <IconBxMailSend />
+                </div>
+                <span className=" text-sm"> Get in touch</span>
+              </Link>
+            </ul>
+          </div>
+          <div className="flex-1">
+            <ul className="justify-center items-center  lg:flex lg:space-x-6 ">
+              {navigations.map((item: any, idx) => {
+                return (
+                  <AnchorLink
+                    href={`#${item.path}`}
+                    key={idx}
+                    className="font-medium underline_hover_effect">
+                    {item.title}
+                  </AnchorLink>
+                );
+              })}
+            </ul>
           </div>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 }
 

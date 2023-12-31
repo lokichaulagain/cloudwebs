@@ -1,50 +1,44 @@
-import Head from "next/head";
+
 import React from "react";
 
 export default function ServiceSection() {
   return (
-
-    <><Head>
-      <title>cloudsnepalweb | Contact Details</title>
-      <meta
-        name="description"
-        content="Cloudnepalweb is the software provider company in Nepal, It has been providing services like website , mobile apps , web apps development services. If you want to make website , mobile apps and webapps please contact at (+977) 9766896866 or you can visit location at Putalisadak, Kathmandu, Nepal or even you can mail at webcloudsnepal@gmail.com." />
-    </Head><section
+    <section
       id="services"
       className=" ">
-        <h3 className="text-green-600 font-semibold mb-2">Our Services & Expertise</h3>
-        <div className=" flex gap-4  flex-col md:flex-row  text-zinc-600">
-          <p className=" text-2xl md:text-4xl font-semibold w-full text-zinc-700">
-            Following are the services <br /> that we offers
-          </p>
-          <p className=" w-full">We build secure . efficient and visually stunning mobiles apps (android & ios), desktop apps, web apps , ecommerce solution , ERP system and custom softwares to meet your business goals.</p>
-        </div>
+      <h3 className="text-green-600 font-semibold mb-2">Our Services & Expertise</h3>
+      <div className=" flex gap-4  flex-col md:flex-row  text-zinc-600">
+        <p className=" text-2xl md:text-4xl font-semibold w-full text-zinc-700">
+          Following are the services <br /> that we offers
+        </p>
+        <p className=" w-full">We build secure . efficient and visually stunning mobiles apps (android & ios), desktop apps, web apps , ecommerce solution , ERP system and custom softwares to meet your business goals.</p>
+      </div>
 
-        <div className=" flex flex-col  gap-8 mt-12">
-          {services.map((item: any, index: number) => (
-            <div key={index}>
-              <div className="grid grid-cols-3 gap-2 md:gap-8 items-center">
-                <button className="expand_container">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span className="text-xs md:text-lg flex items-center justify-center pt-1 font-semibold">{item.name}</span>
-                </button>
-                <p className=" text-xs md:text-sm ms-5 md:ms-0 flex items-center gap-1">
-                  <IconBxBadgeCheck />
-                  {item.completed}{" "}
-                </p>
-                <p className=" text-xs md:text-sm flex items-center gap-1">
-                  <IconLanPending />
-                  {item.running}
-                </p>
-              </div>
-              <hr className=" mt-1" />
+      <div className=" flex flex-col  gap-8 mt-12">
+        {services.map((item: any, index: number) => (
+          <div key={index}>
+            <div className="grid grid-cols-3 gap-2 md:gap-8 items-center">
+              <button className="expand_container">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span className="text-xs md:text-lg flex items-center justify-center pt-1 font-semibold">{item.name}</span>
+              </button>
+              <p className=" text-xs md:text-sm ms-5 md:ms-0 flex items-center gap-1">
+                <IconBxBadgeCheck />
+                {item.completed}{" "}
+              </p>
+              <p className=" text-xs md:text-sm flex items-center gap-1">
+                <IconLanPending />
+                {item.running}
+              </p>
             </div>
-          ))}
-        </div>
-      </section></>
+            <hr className=" mt-1" />
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
 
