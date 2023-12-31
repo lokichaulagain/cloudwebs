@@ -56,7 +56,7 @@ const services = [
   },
 
   {
-    name: "Web Application Development",
+    name: "Web Apps Development",
     completed: "4+ Project Completed",
     running: "2 Running Project",
   },
