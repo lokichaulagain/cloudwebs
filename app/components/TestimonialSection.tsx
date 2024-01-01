@@ -24,7 +24,7 @@ export default function TestimonialSection() {
                 <li key={idx}>
                   <figure>
                     <blockquote>
-                      <p className="text-zinc-700 leading-relaxed tracking-wide ">“{item.quote}“</p>
+                      <p className="text-zinc-700 leading-relaxed tracking-wide ">&ldquo;{item.quote}&rdquo;</p>
                     </blockquote>
                     <div className="mt-6">
                       <div className=" flex items-center justify-center">
