@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body suppressHydrationWarning={true} className={roboto.className}>
         <Header />
         <div className=" max-w-screen-xl mx-auto px-4 gap-12 text-zinc-600 md:px-8">{children}</div>
         <Footer />

@@ -37,6 +37,7 @@ export default function Header() {
           <p className=" text-lg font-medium tracking-wide uppercase">cloudsnepalweb</p>
           <div className="hidden">
             <button
+            aria-label="menu-button"
               className=" outline-none p-2 rounded-md"
               onClick={() => setState(!state)}>
               {state ? <X /> : <Menu />}

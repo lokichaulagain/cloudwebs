@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
-import banner from "../../public/banner.png";
+// import banner from "../../public/banner_webp.webp";
 import Link from "next/link";
+
+const banner="https://res.cloudinary.com/dubzpy7hn/image/upload/v1704079462/Cloudsnepalweb/banner_webp_ujod1a.webp"
 
 
 export default function Banner() {
@@ -12,7 +14,7 @@ export default function Banner() {
           <h1 className="text-sm text-green-600 font-medium">Empowering your Businesses with Software Solutions.</h1>
           <h2 className="text-4xl text-zinc-700 font-extrabold mx-auto md:text-5xl">
             Software Solutions for
-            <button className="hero_section_transition">
+            <button aria-label="hero-section-transition" className="hero_section_transition">
               <span>&nbsp;Seamless Business Transformation and Growth.&nbsp;</span>
               <span
                 aria-hidden="true"
@@ -41,6 +43,7 @@ export default function Banner() {
             alt="img"
             width={2000}
             height={1000}
+            priority
           />
         </div>
       </div>

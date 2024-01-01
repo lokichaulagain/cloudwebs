@@ -26,6 +26,8 @@ import ios from "../images/technology/ios-logo.png";
 import postman from "../images/technology/postman.jpg";
 import vApache from "../images/technology/vApache-1.png";
 import selenium from "../images/technology/selenium.png";
+import python from "../images/technology/python.svg";
+import flutter from "../images/technology/flutter.png";
 
 
 export default function TechnologySection() {
@@ -46,6 +48,8 @@ export default function TechnologySection() {
             <Image
               src={item.image}
               alt="img"
+              height={50}
+              width={50}
               className="image text cursor-pointer h-8 w-8"
             />
           </div>
@@ -162,6 +166,11 @@ const technologies = [
     image: angular,
     tooltip: "Angular",
   },
+
+  {
+    image: python,
+    tooltip: "Python",
+  },
   {
     image: android,
     tooltip: "Android",
@@ -171,8 +180,8 @@ const technologies = [
     tooltip: "PSQL",
   },
   {
-    image: Oracle,
-    tooltip: "Oracle",
+    image: flutter,
+    tooltip: "Flutter",
   },
   {
     image: MySQL,

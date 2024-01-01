@@ -5,6 +5,7 @@ import OurPartners from "./components/OurPartners";
 import ContactSection from "./components/ContactSection";
 import StatsSection from "./components/StatsSection";
 import TestimonialSection from "./components/TestimonialSection";
+import MessageFromFounder from "./components/MessageFromFounder";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <TechnologySection />
       <TestimonialSection />
       <StatsSection />
+      <MessageFromFounder />
       <ContactSection />
     </main>
   );

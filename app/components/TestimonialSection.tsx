@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 
 export default function TestimonialSection() {
@@ -29,11 +28,11 @@ export default function TestimonialSection() {
                     </blockquote>
                     <div className="mt-6">
                       <div className=" flex items-center justify-center">
-                        <p className=" h-10 w-10 bg-gray-300 rounded-full flex items-center justify-center font-medium">{item.name.split("")[0]}</p>
+                        <p className=" h-10 w-10 bg-zinc-300 rounded-full flex items-center justify-center font-medium">{item.name.split("")[0]}</p>
                       </div>
                       <div className="mt-3">
                         <span className="block text-zinc-800 font-semibold">{item.name}</span>
-                        <span className="block text-gray-600 text-sm mt-0.5">
+                        <span className="block text-zinc-600 text-sm mt-0.5">
                           {item.title} ({item.company})
                         </span>
                       </div>
@@ -51,7 +50,8 @@ export default function TestimonialSection() {
             {testimonials.map((item, idx) => (
               <li key={idx}>
                 <button
-                  className={`w-2.5 h-2.5 rounded-full duration-150 ring-offset-2 ring-green-800 focus:ring ${currentTestimonial == idx ? "bg-green-800" : "bg-gray-300"}`}
+                  aria-label="change-testimonial-button"
+                  className={`w-2.5 h-2.5 rounded-full duration-150 ring-offset-2 ring-green-800 focus:ring ${currentTestimonial == idx ? "bg-green-800" : "bg-zinc-300"}`}
                   onClick={() => setCurrentTestimonial(idx)}></button>
               </li>
             ))}

@@ -18,7 +18,7 @@ export default function ServiceSection() {
         {services.map((item: any, index: number) => (
           <div key={index}>
             <div className="grid grid-cols-3 gap-2 md:gap-8 items-center">
-              <button className="expand_container">
+              <button aria-label="individual-service-button" className="expand_container">
                 <span></span>
                 <span></span>
                 <span></span>

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import logo from "../../public/logo.png";
 import Image from "next/image";
+import logo from "../../public/logo.png";
 
 export default function Footer() {
   return (
@@ -11,8 +11,9 @@ export default function Footer() {
           <Image
             src={logo}
             alt="img"
-            height={100}
-            width={100}
+            height={200}
+            width={200}
+            style={{ width: '20%', height: '20%' }}
           />
         </div>
         <p className="leading-relaxed text-sm mt-2 text-justify">Cloud Nepal and it’s team regarding different other institutions have grown 10x in these two years. It’s not about desire, not about profit, not about building but we are here for the development and the change in nation. Lets build something crazy .</p>
@@ -22,7 +23,7 @@ export default function Footer() {
         <div className="mt-4 text-xs sm:mt-0">&copy; {new Date().getFullYear()} Clouds Nepal All rights reserved.</div>
         <div className="mt-6 sm:mt-0">
           <ul className="flex items-center space-x-4">
-            <li className="w-8 h-8  bg-gray-200  rounded-full flex items-center justify-center">
+            <li className="w-8 h-8  bg-zinc-200  rounded-full flex items-center justify-center">
               <Link
                 target="_blank"
                 href="https://www.facebook.com/people/Clouds-Nepal-Web/61554683466247/?mibextid=LQQJ4d">
@@ -35,7 +36,7 @@ export default function Footer() {
               </Link>
             </li>
 
-            <li className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
+            <li className="w-8 h-8 bg-zinc-200 rounded-full flex items-center justify-center">
               <Link
                 target="_blank"
                 href="https://www.facebook.com/people/Clouds-Nepal-Web/61554683466247/?mibextid=LQQJ4d">
@@ -49,7 +50,7 @@ export default function Footer() {
               </Link>
             </li>
 
-            <li className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
+            <li className="w-8 h-8 bg-zinc-200 rounded-full flex items-center justify-center">
               <Link href="tel:9766896866">
                 <svg
                   fill="currentColor"
@@ -60,7 +61,7 @@ export default function Footer() {
               </Link>
             </li>
 
-            <li className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
+            <li className="w-8 h-8 bg-zinc-200 rounded-full flex items-center justify-center">
               <Link href="mailto:webcloudsnepal@gmail.com">
                 <svg
                   viewBox="0 0 1024 1024"

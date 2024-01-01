@@ -12,7 +12,6 @@ import urban from "../images/clients/urban.png";
 import Image from "next/image";
 import { useState } from "react";
 
-
 export default function OurPartners() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const handleMouseEnter = (index: any) => {
@@ -30,7 +29,7 @@ export default function OurPartners() {
         <p className="text-justify">Explore our valued partnerships through our client section. Witness the brands we’ve proudly collaborated with, each image representing a story of successful projects and satisfied clients. Join us on this journey, and let’s create success together.</p>
       </div>
 
-      <div className="mt-12 flex justify-center image-container ">
+      <div className="mt-12 flex  justify-center image-container ">
         <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-16 md:grid-cols-3 lg:grid-cols-4">
           {[everrst, wisecube, manas, lumbini, , scpcc, tsubaki, quiz, dhulikhel, urban, diwasi].map((item, index) => (
             <div
@@ -41,6 +40,11 @@ export default function OurPartners() {
               <Image
                 src={item}
                 alt="client-image"
+                height={500}
+                width={500}
+                blurDataURL="our partner"
+                placeholder="blur"
+                quality={20}
                 className=" h-20 w-30 object-contain cursor-pointer"
               />
             </div>
