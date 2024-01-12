@@ -9,6 +9,8 @@ import wisecube from "../images/clients/wisecube.png";
 import dhulikhel from "../images/clients/dhulikhel.png";
 import diwasi from "../images/clients/diwasi.png";
 import urban from "../images/clients/urban.png";
+import eatery from "../images/clients/eatery.jpg";
+import farm from "../images/clients/farm.jpg";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -31,7 +33,7 @@ export default function OurPartners() {
 
       <div className="mt-12 flex  justify-center image-container ">
         <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-16 md:grid-cols-3 lg:grid-cols-4">
-          {[everrst, wisecube, manas, lumbini, , scpcc, tsubaki, quiz, dhulikhel, urban, diwasi].map((item, index) => (
+          {[everrst, wisecube, manas, lumbini, , scpcc, tsubaki, quiz, dhulikhel, urban, diwasi, eatery, farm].map((item, index) => (
             <div
               key={index}
               className={`image-item ${hoveredIndex !== null && hoveredIndex !== index ? "black-and-white" : ""}`}

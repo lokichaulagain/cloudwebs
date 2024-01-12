@@ -61,8 +61,8 @@ export default function TechnologySection() {
 
 const technologies = [
   {
-    image: nest,
-    tooltip: "Nest",
+    image: next,
+    tooltip: "NextJs",
   },
 
   {
@@ -77,7 +77,7 @@ const technologies = [
 
   {
     image: tailwind,
-    tooltip: "Nestjs",
+    tooltip: "TailwindCSS",
   },
 
   {
@@ -92,7 +92,7 @@ const technologies = [
 
   {
     image: mdx,
-    tooltip: "Nestjs",
+    tooltip: "MDX",
   },
 
   {
@@ -106,7 +106,7 @@ const technologies = [
   },
 
   {
-    image: next,
+    image: nest,
     tooltip: "Nest",
   },
 
@@ -130,7 +130,7 @@ const technologies = [
   },
   {
     image: radix,
-    tooltip: "Nestjs",
+    tooltip: "Radix",
   },
   {
     image: ios,
@@ -142,7 +142,7 @@ const technologies = [
   },
   {
     image: js,
-    tooltip: "Nestjs",
+    tooltip: "JS",
   },
 
   {
