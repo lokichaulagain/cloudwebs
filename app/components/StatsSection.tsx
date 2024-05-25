@@ -66,7 +66,7 @@ export default function StatsSection() {
 
 const stats = [
   {
-    data: 22,
+    data: 150,
     title: "Project Completed",
   },
   {
