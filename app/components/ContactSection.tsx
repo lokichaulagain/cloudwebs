@@ -73,7 +73,7 @@ const contactMethods = [
         />
       </svg>
     ),
-    contact: "Head Office :- Jadibuti Nerephat Kathmandu , Branch :- Putalisadak, Kathmandu, Nepal",
+    contact: "Head Office :- Jadibuti Narephat Kathmandu , Branch :- Putalisadak, Kathmandu, Nepal",
     title: "Location",
   },
   {
@@ -111,7 +111,7 @@ const contactMethods = [
         />
       </svg>
     ),
-    contact: "webcloudsnepal@gmail.com",
+    contact: "infocloudsgroup@gmail.com",
     title: "Email",
   },
 ];
