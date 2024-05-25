@@ -1,22 +1,23 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
-import logo from "../../public/logo.png";
+// import Image from "next/image";
+// import logo from "../../public/logo.png";
 
 export default function Footer() {
   return (
     <footer className="text-zinc-100 bg-green-900 px-4 py-8 md:px-8 mt-12">
       <div className="max-w-xl sm:mx-auto sm:text-center">
-        <div className="flex items-center justify-center">
-          <Image
+        <div className="flex items-center justify-center italic">
+          {/* <Image
             src={logo}
             alt="img"
             height={200}
             width={200}
             style={{ width: '20%', height: '20%' }}
-          />
+          /> */}
+          CLOUDS NEPAL WEB
         </div>
-        <p className="leading-relaxed text-sm mt-2 text-justify">Cloud Nepal and it’s team regarding different other institutions have grown 10x in these two years. It’s not about desire, not about profit, not about building but we are here for the development and the change in nation. Lets build something crazy .</p>
+        <p className="leading-relaxed text-sm mt-2 text-justify text-gray-200" >Clouds Nepal Web and it’s team regarding different other institutions have grown 10x in these two years. It’s not about desire, not about profit, not about building but we are here for the development and the change in nation. Lets build something crazy .</p>
       </div>
 
       <div className="mt-8 items-center justify-between sm:flex">

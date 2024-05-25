@@ -45,38 +45,38 @@ export default function ServiceSection() {
 const services = [
   {
     name: "Website Development",
-    completed: "20+ Project Completed",
-    running: "3 Running Project",
+    completed: "150+ Project Completed",
+    running: "9 Running Project",
   },
 
   {
     name: "Mobile Apps Development ",
-    completed: "3 Project Completed",
-    running: "1 Running Project",
+    completed: "60 Project Completed",
+    running: "7 Running Project",
   },
 
   {
     name: "Web Apps Development",
-    completed: "4+ Project Completed",
+    completed: "70+ Project Completed",
     running: "2 Running Project",
   },
 
   {
     name: "Digital Marketing",
-    completed: "8+ Project Completed",
-    running: "2 Running Project",
+    completed: "300+ Project Completed",
+    running: "31 Running Project",
   },
 
   {
     name: "Brand Promotion",
-    completed: "7+ Project Completed",
-    running: "2 Running Project",
+    completed: "10+ Project Completed",
+    running: "3 Running Project",
   },
 
   {
     name: "Graphic Design ",
-    completed: "40+ Project Completed",
-    running: "4 Running Project",
+    completed: "800+ Project Completed",
+    running: "68 Running Project",
   },
 ];
 

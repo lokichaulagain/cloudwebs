@@ -66,19 +66,19 @@ export default function StatsSection() {
 
 const stats = [
   {
-    data: 150,
+    data: 400,
     title: "Project Completed",
   },
   {
-    data: 14,
+    data: 27,
     title: "Qualified Professionals",
   },
   {
-    data: 2,
+    data: 24,
     title: "In House Project",
   },
   {
-    data: 6,
+    data: 46,
     title: "Different Services",
   },
 ];

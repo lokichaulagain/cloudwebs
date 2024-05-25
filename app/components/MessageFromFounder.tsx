@@ -17,7 +17,7 @@ export default function MessageFromFounder() {
       </blockquote>
       <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
         <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-zinc-500 ">
-          <cite className="pe-3 font-medium text-zinc-700 ">Abishek Mishra</cite>
+          <cite className="pe-3 font-medium text-zinc-700 ">Abhishek Mishra</cite>
           <cite className="ps-3 text-sm text-zinc-500 ">Message from Founder</cite>
         </div>
       </figcaption>

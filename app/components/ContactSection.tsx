@@ -9,7 +9,7 @@ export default function ContactSection() {
       className="">
       <div className=" text-zinc-600 ">
         <div className="max-w-xl space-y-3">
-          <h3 className="text-green-600 font-semibold">Contact</h3>
+          <h3 className="text-green-600 font-semibold">Contact Us</h3>
           <p className="text-zinc-700 text-3xl font-semibold sm:text-4xl">Let us know how we can help</p>
           <p className=" text-justify">We’re here to help and answer any question you might have, We look forward to hearing from you .</p>
         </div>
@@ -73,7 +73,7 @@ const contactMethods = [
         />
       </svg>
     ),
-    contact: "Putalisadak, Kathmandu, Nepal",
+    contact: "Head Office :- Jadibuti Nerephat Kathmandu , Branch :- Putalisadak, Kathmandu, Nepal",
     title: "Location",
   },
   {
@@ -92,7 +92,7 @@ const contactMethods = [
         />
       </svg>
     ),
-    contact: "9766896866",
+    contact: "9766896866 , 9866448106",
     title: "Phone",
   },
   {
